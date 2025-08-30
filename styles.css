@@ -1,0 +1,53 @@
+body {
+  text-align: center;
+}
+h1 {
+  background-color: green;
+  color: white;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+span {
+  color: blue;
+}
+.mohamed-img:hover {
+  transform: scale(1.2);
+}
+.medicine-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .medicine-container {
+    display: flex;
+  }
+}
+.medicine-container p {
+  padding: 20px;
+  background: linear-gradient(blue, red, green);
+  color: white;
+}
+.medicine-container img {
+  width: 150px;
+  height: 150px;
+  padding-bottom: 20px;
+  justify-self: center;
+  animation: infinite rotate 4s linear;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
+}
