@@ -1,3 +1,11 @@
+/* Brief Section */
+
+.brief {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+/* Index.html Section */
 .who {
   background: linear-gradient(black, red);
   color: white;
@@ -14,29 +22,35 @@
   background-color: rgb(207, 207, 207);
   color: black;
 }
-.medicine-container {
+/* Subject.html Section */
+.medicine-containers {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   text-align: center;
 }
+/* Resoponsive Section */
 @media (max-width: 768px) {
-  .medicine-container {
+  .medicine-containers {
     display: flex;
+    flex-direction: column;
   }
 }
-.medicine-container p {
+.medicine-containers p {
   padding: 20px;
-  background: linear-gradient(red, black);
+  background: linear-gradient(#0000ff, #ffffff);
   color: white;
 }
-.medicine-container img {
+.medicine-containers img {
   width: 150px;
   height: 150px;
   padding-bottom: 20px;
   justify-self: center;
-  animation: infinite scale 4s linear;
+  animation: infinite scale 7s linear;
+  max-width: 100%;
+  height: auto;
 }
+/* Animation Section */
 @keyframes scale {
   0% {
     transform: scale(1);
